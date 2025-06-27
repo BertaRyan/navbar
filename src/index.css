@@ -307,3 +307,16 @@ nav{
 }
 
 /* 160px */
+
+.social-container{
+  display:none;
+}
+
+@media (min-width:800px){
+  .toggle-btn{
+    display:none;
+  }
+  .social-container{
+    display:flex;
+  }
+}
