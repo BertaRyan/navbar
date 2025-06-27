@@ -253,3 +253,63 @@ ul {
   margin-top: 1rem;
 }
 /* ============= PROJECT CSS =============== */
+nav{
+
+}
+
+.nav-header{
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+}
+.menu ul a{
+  display:block;
+  color:black;
+  padding:10px 0 5px 15px;
+  transition: 300ms ease-in-out;
+}
+
+.menu ul a:hover{
+  display:block;
+  color:black;
+  padding-left:30px;
+  background:lightblue;
+  
+}
+
+.menu{
+  background:lightblue;
+  height:0;
+  overflow:hidden;
+  transition:.5s ease-in-out;
+}
+
+.show-container{
+  height:10rem;
+
+}
+
+.social ul{
+  display:flex;
+  gap:10px;
+}
+
+.toggle-btn{
+  font-size:20px;
+  border: transparent;
+  background:white;
+  color: rgb(59, 140, 167);
+  cursor:pointer;
+}
+
+.toggle-btn:hover{
+  animation: pulse 1s ease-in-out;
+}
+
+@keyframes pulse{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.4);}
+  100%{transform: scale(1);}
+}
+
+/* 160px */
