@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useRef} from 'react'
 import {links, social} from "./data"
 import { FaBarsStaggered } from "react-icons/fa6";
 import logo from './logo.svg'

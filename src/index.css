@@ -279,14 +279,8 @@ nav{
 
 .menu{
   background:lightblue;
-  height:0;
   overflow:hidden;
   transition:.5s ease-in-out;
-}
-
-.show-container{
-  height:10rem;
-
 }
 
 .social ul{
