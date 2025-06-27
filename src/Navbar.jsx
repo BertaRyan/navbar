@@ -22,6 +22,18 @@ const Navbar = () => {
         <div className="logo">
             <img src={logo} alt='Logo' />
         </div>
+        <div className="desktop-menu">
+      <ul>
+        {links.map((link) => {
+          return <a key={link.id} href={link.url}><li>{link.text}</li></a>
+        })}
+      </ul>
+    </div>
+    <ul className="social-container">
+      {social.map((item) => {
+        return <a key={item.id} href={item.url}><li>{item.icon}</li></a>
+      })}
+    </ul>
           <button className="toggle-btn" onClick={toggleLinks}><FaBarsStaggered /></button>
       </div>
          <div className="menu" ref={linksContainerRef} style={linkStyles} >
@@ -31,11 +43,7 @@ const Navbar = () => {
       })}
       </ul>
     </div>
-    <ul className="social-container">
-      {social.map((item) => {
-        return <a key={item.id} href={item.url}><li>{item.icon}</li></a>
-      })}
-    </ul>
+    
       
       </nav>;
 }

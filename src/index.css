@@ -253,13 +253,13 @@ ul {
   margin-top: 1rem;
 }
 /* ============= PROJECT CSS =============== */
-nav{
-
-}
 
 .nav-header{
   display:flex;
   justify-content:space-between;
+  padding:0 30px;
+  background:white;
+  overflow:hidden;
   width:100%;
 }
 .menu ul a{
@@ -312,11 +312,27 @@ nav{
   display:none;
 }
 
-@media (min-width:800px){
+.desktop-menu ul{
+  display:none;
+}
+
+@media (min-width:805px){
+ 
+  .nav-header{
+    align-items:center;
+    max-width:1200px;
+    margin:0 auto;
+  }
   .toggle-btn{
     display:none;
   }
   .social-container{
     display:flex;
+    gap:10px
+  }
+
+  .desktop-menu ul{
+    display:flex;
+    gap:10px;
   }
 }
